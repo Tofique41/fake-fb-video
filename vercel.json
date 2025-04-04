@@ -1,19 +1,16 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "/",
-      "headers": {
-        "cache-control": "no-cache"
-      },
-      "status": 302,
-      "location": "https://www.youtube.com/watch?v=tCxhCOE96lw",
+      "source": "/",
       "has": [
         {
           "type": "header",
           "key": "user-agent",
-          "value": "^(?!.*(facebookexternalhit|Facebot)).*$"
+          "value": "^(?!.*facebookexternalhit).*$"
         }
-      ]
+      ],
+      "destination": "https://www.youtube.com/watch?v=tCxhCOE96lw",
+      "statusCode": 302
     }
   ]
 }
