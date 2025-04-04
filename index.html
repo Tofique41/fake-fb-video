@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Facebook Open Graph Tags -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="OMG! You won't believe this video 😱">
+    <meta property="og:description" content="Click to watch the full video now.">
+    <meta property="og:image" content="https://yourdomain.com/fake-thumbnail.jpg">
+    <meta property="og:url" content="https://your-vercel-app.vercel.app">
+    <meta property="og:site_name" content="VIDEO.WATCH">
+    <meta property="fb:app_id" content="123456789">
+    
+    <title>Fake Facebook Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .video-preview {
+            background-image: url('https://imgur.com/a/xuxwSFI');
+            background-size: cover;
+            width: 600px;
+            height: 340px;
+            position: relative;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-preview" onclick="window.location.href='https://www.youtube.com/watch?v=tCxhCOE96lw'">
+        <div class="play-button">▶</div>
+    </div>
+    <p>Click to watch the full video.</p>
+</body>
+</html>
