@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "headers": {
+        "cache-control": "no-cache"
+      },
+      "status": 302,
+      "location": "https://www.youtube.com/watch?v=tCxhCOE96lw",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "^(?!.*(facebookexternalhit|Facebot)).*$"
+        }
+      ]
+    }
+  ]
+}
